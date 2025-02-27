@@ -15,7 +15,7 @@ const getInitialDarkMode = () => {
 
 export const AppProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode())
-  const [searchQuery, setSearchQuery] = useState('mouse')
+  const [searchQuery, setSearchQuery] = useState('cat')
 
   const toggleDarkTheme = () => {
     const newDarkTheme = !isDarkTheme

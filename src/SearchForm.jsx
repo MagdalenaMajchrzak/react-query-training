@@ -1,9 +1,7 @@
 import { useGlobalContext } from './context'
-import { useQueryClient } from '@tanstack/react-query'
 
 const SearchForm = () => {
   const { setSearchQuery } = useGlobalContext()
-  const queryClient = useQueryClient()
   const handleSubmit = (e) => {
     e.preventDefault()
     const searchValue = e.target.elements.search.value
